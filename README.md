@@ -12,9 +12,9 @@ In this dataset, we are looking for the connection between a wine’s quality vs
 
 ## Interesting Findings
 - Higher volatile acidity strongly decreases wine quality
-      - Association with spoilage and vinegar-like aromas
+    - Association with spoilage and vinegar-like aromas
 - Density and residual sugar are strongly correlated
-      - As sugar is converted into alcohol during fermentation, the density of the wine decreases.
+    - As sugar is converted into alcohol during fermentation, the density of the wine decreases.
 - Red wines tend to have higher quality ratings compared to white wines in this dataset
 - Residual sugar and alcohol levels are strongly negatively correlated, due to higher ABV ranges (>12.5%) having no sweetness (dry wine)
 
