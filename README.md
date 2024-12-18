@@ -11,12 +11,12 @@ Research Question:
 In this dataset, we are looking for the connection between a wine’s quality vs its other attributes, such as fixed acidity, volatile acidity, pH, chlorides, residual sugar, etc. We want to discover if we can use the wine’s contents to predict its quality. Specifically, which chemical properties most significantly influence the quality rating of the wine? In this research we also hope to discover how important acidity plays a role in the quality of wine, if there is any correlation at all. Our hypothesis is higher quality ratings are expected to correlate with moderate levels of acidity, lower levels of residual sugar, and appropriate alcohol content. Additionally, balanced levels of sulfur dioxide, pH, and chlorides may positively affect the quality as well.
 
 ## Interesting Findings
-Higher volatile acidity strongly decreases wine quality
-Association with spoilage and vinegar-like aromas
-Density and residual sugar are strongly correlated
-As sugar is converted into alcohol during fermentation, the density of the wine decreases.
-Red wines tend to have higher quality ratings compared to white wines in this dataset
-Residual sugar and alcohol levels are strongly negatively correlated, due to higher ABV ranges (>12.5%) having no sweetness (dry wine)
+- Higher volatile acidity strongly decreases wine quality
+      - Association with spoilage and vinegar-like aromas
+- Density and residual sugar are strongly correlated
+      - As sugar is converted into alcohol during fermentation, the density of the wine decreases.
+- Red wines tend to have higher quality ratings compared to white wines in this dataset
+- Residual sugar and alcohol levels are strongly negatively correlated, due to higher ABV ranges (>12.5%) having no sweetness (dry wine)
 
 ## Conclusion
 - Wines with more residual sugar have higher quality	
