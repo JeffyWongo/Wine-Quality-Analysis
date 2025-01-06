@@ -2,8 +2,6 @@
 
 Creating interaction and second-order models for Wine Quality Analysis  
 
-[Project Slides](https://docs.google.com/presentation/d/1erbW4fPmB2GrKnDtiREE0j_FVKpiZNxoFrAHTbloMBo/edit?usp=sharing)  
-
 ---
 
 ## My Dataset  
