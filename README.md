@@ -1,34 +1,41 @@
-# Wine-Quality-Analysis
-Creating interaction and second-order models for Wine Quality Analysis
+### Wine Quality Analysis  
 
-[Project Slides](https://docs.google.com/presentation/d/1erbW4fPmB2GrKnDtiREE0j_FVKpiZNxoFrAHTbloMBo/edit?usp=sharing)
+Creating interaction and second-order models for Wine Quality Analysis  
 
-## Our Dataset: 
-The dataset we are using is one of the datasets given to us: wine-quality-white.csv and winequality-red.csv 4898 observations with 11 variables. The dataset consists of physicochemical properties and sensory quality ratings for Portuguese “Vinho Verde” wines, including a red wine dataset with 1,599 samples and a white wine dataset with 4,898 samples. Each dataset includes 11 physicochemical factors—fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, and alcohol level—all of which contribute to sensory quality ratings on a discrete scale from 0 to 10. While all physicochemical factors are measured as continuous variables, the final quality score is treated as a discrete variable, serving as the dependent variable or response variable that determines the overall quality of the wine. This score reflects the combined influence of the physicochemical attributes on the wine's sensory profile.
-The dataset is collected using a dual-method approach to ensure a comprehensive analysis of wine quality. Laboratory measurements are performed on the eleven physicochemical variables, offering precise and consistent data. Sensory evaluations, on the other hand, are conducted through blind taste tests performed by professional tasters, who assess the wines without considering external factors such as brand or price. This thorough combination of objective laboratory data and subjective sensory analysis creates a reliable dataset for exploring the relationship between a wine’s chemical composition and its perceived quality, providing valuable insights for both mathematical study, scientific study, and practical applications.
-Research Question:
+[Project Slides](https://docs.google.com/presentation/d/1erbW4fPmB2GrKnDtiREE0j_FVKpiZNxoFrAHTbloMBo/edit?usp=sharing)  
 
-In this dataset, we are looking for the connection between a wine’s quality vs its other attributes, such as fixed acidity, volatile acidity, pH, chlorides, residual sugar, etc. We want to discover if we can use the wine’s contents to predict its quality. Specifically, which chemical properties most significantly influence the quality rating of the wine? In this research we also hope to discover how important acidity plays a role in the quality of wine, if there is any correlation at all. Our hypothesis is higher quality ratings are expected to correlate with moderate levels of acidity, lower levels of residual sugar, and appropriate alcohol content. Additionally, balanced levels of sulfur dioxide, pH, and chlorides may positively affect the quality as well.
+---
 
-## Interesting Findings
-- Higher volatile acidity strongly decreases wine quality
-    - Association with spoilage and vinegar-like aromas
-- Density and residual sugar are strongly correlated
-    - As sugar is converted into alcohol during fermentation, the density of the wine decreases.
-- Red wines tend to have higher quality ratings compared to white wines in this dataset
-- Residual sugar and alcohol levels are strongly negatively correlated, due to higher ABV ranges (>12.5%) having no sweetness (dry wine)
+## My Dataset  
+I worked with two datasets, *wine-quality-white.csv* and *winequality-red.csv*, which contain 4,898 and 1,599 samples, respectively. These datasets include physicochemical properties and sensory quality ratings for Portuguese “Vinho Verde” wines. Each dataset has 11 physicochemical variables—fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, and alcohol level—alongside a quality score rated on a scale from 0 to 10.  
 
-## Conclusion
-- Wines with more residual sugar have higher quality	
-    - Perfectly ripened grapes
-- Alcohol content has strong correlation with quality
-    - More sugar = more alcohol during fermentation
-- Wines with high volatile acidity generally have lower quality
-- Small amounts of salt content (chlorides) in wine enhance flavor
+The quality score serves as the response variable, reflecting the combined influence of the physicochemical attributes on the wine's sensory profile. To ensure a comprehensive analysis, the data were collected using a dual-method approach: laboratory measurements provided objective data, while blind sensory evaluations by professional tasters added subjective assessments. This combination allowed me to explore the relationship between chemical composition and perceived wine quality, providing insights for scientific and practical applications.  
 
-- There could be other variables that explain variance in the wine
-- Significantly more white wine samples than red wine
-- Quality rating is subjective
-- Explore other variables outside of the dataset
-- Experiment with less variables in the final model
+---
 
+## Research Question  
+My goal was to investigate the connection between a wine’s quality and its chemical attributes, such as fixed acidity, volatile acidity, pH, chlorides, and residual sugar. I aimed to determine whether wine quality could be predicted from these properties and to identify which chemical factors most significantly influence the quality rating.  
+
+I hypothesized that higher quality ratings would correlate with moderate acidity, lower residual sugar levels, and appropriate alcohol content. I also expected balanced levels of sulfur dioxide, pH, and chlorides to positively affect wine quality.  
+
+---
+
+## Interesting Findings  
+- **Volatile Acidity**: I found that higher volatile acidity strongly decreases wine quality due to its association with spoilage and vinegar-like aromas.  
+- **Density and Residual Sugar**: These variables are strongly correlated—during fermentation, as sugar converts to alcohol, the wine's density decreases.  
+- **Red vs. White Wines**: Red wines generally received higher quality ratings than white wines in this dataset.  
+- **Residual Sugar and Alcohol**: These are negatively correlated; wines with higher alcohol content (>12.5% ABV) tend to have no residual sweetness (dry wines).  
+
+---
+
+## Conclusion  
+- Wines with higher residual sugar often have better quality, indicating perfectly ripened grapes.  
+- Alcohol content has a strong positive correlation with quality—more sugar during fermentation results in higher alcohol content.  
+- High volatile acidity generally lowers wine quality.  
+- Small amounts of salt content (chlorides) can enhance a wine's flavor.  
+
+However, I noted that:  
+- There may be additional variables influencing wine quality.  
+- The dataset contains significantly more white wine samples than red, which may skew results.  
+- Quality ratings are inherently subjective.  
+- Future work could involve exploring external variables or refining the model by focusing on fewer key factors.  
